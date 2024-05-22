@@ -23,9 +23,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz") -- half page jump up
 vim.keymap.set("n", "n", "nzzzv") --lock row in search
 vim.keymap.set("n", "N", "Nzzzv") --lock row in search
 vim.keymap.set("x", "p", '"_dP') --keep paste when replacing highlight text
-vim.keymap.set("n", "<leader>y", '"+y') -- yank to system keyboard
-vim.keymap.set("v", "<leader>y", '"+y') -- yank to system keyboard
-vim.keymap.set("n", "<leader>Y", '"+Y') -- yank to system keyboard
+vim.keymap.set("n", "<leader>y", '"+y', { desc = "[y]ank to system" }) -- yank to system keyboard
+vim.keymap.set("v", "<leader>y", '"+y', { desc = "[y]ank to system" }) -- yank to system keyboard
+vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "[Y]ank to system" }) -- yank to system keyboard
 vim.keymap.set("n", "Q", "<nop>") -- disabled Q (autorun last macro)
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")

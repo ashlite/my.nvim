@@ -16,7 +16,10 @@ return {
 		"tpope/vim-fugitive",
 		event = "VimEnter",
 		config = function()
-			vim.keymap.set("n", "<leader>g", vim.cmd.Git)
+			vim.keymap.set("n", "<leader>gg", vim.cmd.Git, { desc = "open [G]it window" })
+			vim.keymap.set("n", "<leader>gc", ":Git commit<CR>", { desc = "git [C]ommit" })
+			vim.keymap.set("n", "<leader>gp", ":Git push<CR>", { desc = "git [P]ush" })
+			vim.keymap.set("n", "<leader>ga", ":Git add .<CR>", { desc = "git [A]dd all" })
 		end,
 	},
 }
