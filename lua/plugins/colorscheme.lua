@@ -4,6 +4,9 @@ return { -- Colorscheme
 	name = "gruvbox",
 	priority = 1000, -- Make sure to load this before all the other start plugins.
 	init = function()
+		require("gruvbox").setup({
+			transparent_mode = true,
+		})
 		-- Load the colorscheme here.
 		vim.o.background = "dark"
 		vim.cmd.colorscheme("gruvbox")

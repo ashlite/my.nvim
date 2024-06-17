@@ -1,9 +1,6 @@
 -- SPACE as leader
 vim.g.mapleader = " "
 
--- WORKSPACE KEYMAP
-vim.keymap.set("n", "<leader>we", vim.cmd.Ex, { desc = "Open workspace / file [E]plorer" })
-
 -- DOCUMENT KEYMAP
 vim.keymap.set("n", "<leader>dw", vim.cmd.w, { desc = "document [W]rite / save current file" })
 
