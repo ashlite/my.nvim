@@ -34,7 +34,7 @@ return { -- Highlight, edit, and navigate code
 
 		-- Prefer git instead of curl in order to improve connectivity in some environments
 		require("nvim-treesitter.install").prefer_git = true
-		require("nvim-treesitter.install").compilers = { "zig" }
+		require("nvim-treesitter.install").compilers = { "gcc", "zig" }
 		---@diagnostic disable-next-line: missing-fields
 		require("nvim-treesitter.configs").setup(opts)
 

@@ -34,6 +34,8 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		-- This opens a window that shows you all of the keymaps for the current
 		-- Telescope picker. This is really useful to discover what Telescope can
 		-- do as well as how to actually do it!
+		-- Disable folding in Telescope's result window.
+		vim.api.nvim_create_autocmd("FileType", { pattern = "TelescopeResults", command = [[setlocal nofoldenable]] })
 
 		-- See `:help telescope` and `:help telescope.setup()`
 		require("telescope").setup({

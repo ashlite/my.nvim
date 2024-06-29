@@ -24,6 +24,7 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.scrolloff = 8
 vim.opt.breakindent = true
 vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 -- undo directory
@@ -41,3 +42,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- vim folding
 vim.opt.foldmethod = "indent"
+vim.wo.foldlevel = 99
