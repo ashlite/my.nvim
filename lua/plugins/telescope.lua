@@ -94,5 +94,16 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set("n", "<leader>sn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[S]earch [N]eovim files" })
+
+		--override gleam icons
+		require("nvim-web-devicons").setup({
+			override = {
+				gleam = {
+					icon = "",
+					color = "#ffaff3",
+					name = "Gleam",
+				},
+			},
+		})
 	end,
 }
