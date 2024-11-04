@@ -129,9 +129,8 @@ return { -- LSP Configuration & Plugins
 		local servers = {
 			-- Some languages (like typescript) have entire language plugins that can be useful:
 			--    https://github.com/pmizio/typescript-tools.nvim
-			tsserver = {},
+			ts_ls = {},
 			svelte = {},
-			eslint = {},
 			prismals = {},
 			astro = {},
 			tailwindcss = {},
@@ -168,7 +167,7 @@ return { -- LSP Configuration & Plugins
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
-			"tsserver",
+			"ts_ls",
 			"svelte",
 			"eslint",
 			"prismals",
